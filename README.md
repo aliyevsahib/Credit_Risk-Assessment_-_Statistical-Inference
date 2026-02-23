@@ -36,7 +36,7 @@ The Math: Applied Bayes' Theorem manually to update the bank's risk beliefs.
 
 The Result: The baseline probability (Prior) of any loan being refused was 17.40%. However, given the evidence that a client is "New", the risk (Posterior) plummeted to just 4.79%. Proved mathematically that "New" clients are drastically underrepresented in the rejection pile (only 4.96% likelihood).
 
-<img width="1384" height="584" alt="Bayesian" src="https://github.com/user-attachments/assets/c2084731-8366-4d06-87e3-456451690291" alt="Bayesian Probability Update"/>
+<img width="1300" height="550" alt="Bayesian" src="https://github.com/user-attachments/assets/c2084731-8366-4d06-87e3-456451690291" alt="Bayesian Probability Update"/>
 
 3. Inferential Statistics (A/B Testing with T-Tests)
 The Hypothesis: Do "Repeater" clients ask for statistically significantly higher loan amounts than "New" clients, or is the difference random noise?
@@ -45,7 +45,7 @@ The Math: Conducted a Welch's Independent T-Test to destroy the Null Hypothesis.
 
 The Result: Generated a massive T-Statistic of -268.5 and a P-Value of 0.0. This definitely proved that the difference is not random. Repeaters ask for an average of 218,560 AZN compared to New clients' 106,273 AZN. Visualised the "Fat Right Tail" of Repeater clients using KDE distribution plots.
 
-<img width="1484" height="684" alt="T-Test" src="https://github.com/user-attachments/assets/2b14ca56-7bca-41f8-ac5c-b8ccf336d6f1" alt="T-Test Results and KDE Plot"/>
+<img width="1300" height="600" alt="T-Test" src="https://github.com/user-attachments/assets/2b14ca56-7bca-41f8-ac5c-b8ccf336d6f1" alt="T-Test Results and KDE Plot"/>
 
 4. Categorical Dependency (Chi-Square Test)
 The Hypothesis: Does the physical or digital location where a customer applies (CHANNEL_TYPE) mathematically dictate their risk of rejection (NAME_CONTRACT_STATUS)?
@@ -59,7 +59,7 @@ The Result: The test returned a staggering Chi-Square Statistic of ~550,551 (P-V
 💡 Key Business Takeaways
 "New" is Safer: Counter-intuitively, new clients present significantly lower underwriting risk than the general population. The bank can afford to be more aggressive in approving entry-level loans for new user acquisition.
 
-The "Fat Tail" of Repeaters: While the majority of all clients ask for small loans, the "Repeater" category contains a highly lucrative sub-population seeking massive loans (400k - 1M+ AZN). Dedicated VIP pipelines should be created for this demographic.
+The "Fat Tail" of Repeaters: While the majority of all clients ask for small loans, the "Repeater" category contains a highly lucrative sub-population seeking massive loans (400k - 1M+). Dedicated VIP pipelines should be created for this demographic.
 
 Operational Bottlenecks Exposed: The Chi-Square heatmap revealed that "Corporate Sales" has a toxic 54.7% rejection rate, wasting immense underwriting resources. Furthermore, "Contact Centres" and "Credit/Cash Offices" suffer from massive cancellation rates (~40%). The bank must audit the UX and processes of these specific channels immediately.
 
