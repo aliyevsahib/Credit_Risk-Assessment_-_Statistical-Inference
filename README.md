@@ -66,7 +66,7 @@ Operational Bottlenecks Exposed: The Chi-Square heatmap revealed that "Corporate
 💻 How to Run This Project
 Clone this repository.
 
-Download the dataset from <a src='https://www.kaggle.com/datasets/mishra5001/credit-card?select=previous_application.csv'>Kaggle<a/>.
+Download the dataset from <a href='https://www.kaggle.com/datasets/mishra5001/credit-card?select=previous_application.csv'>Kaggle<a/>.
 
 Ensure you have the required libraries installed (pip install pandas numpy scipy matplotlib seaborn).
 
